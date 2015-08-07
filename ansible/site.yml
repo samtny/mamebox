@@ -5,9 +5,9 @@
   roles:
     - common
 
-- name: configure and deploy mamebox
-  hosts: mamebox
+- name: configure and deploy mame
+  hosts: mame
   remote_user: root
 
   roles:
-    - mamebox
+    - mame

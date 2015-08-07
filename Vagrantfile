@@ -18,7 +18,7 @@ Vagrant.configure(2) do |config|
 
     mamebox.vm.provision "ansible" do |ansible|
       ansible.groups = {
-        "mamebox" => [ "mamebox" ],
+        "mame" => [ "mamebox" ],
       }
 
       ansible.playbook = "ansible/site.yml"

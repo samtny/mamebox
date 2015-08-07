@@ -1,0 +1,6 @@
+---
+- name: Add c.falco/mame repository
+  apt_repository: repo='ppa:c.falco/mame' state=present update_cache=yes
+
+- name: Install mame
+  apt: name=mame state=present
